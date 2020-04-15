@@ -1,0 +1,113 @@
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-home-button, .to-analytics-button {
+    display: inline-block;
+    max-height: 30px;
+    border-radius: 2px;
+    outline: none;
+    margin: 0 auto 10px;
+}
+
+.filter-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.select-box {
+    max-width: 50%;
+}
+
+select {
+    width: 90%;
+    overflow-x: hidden;
+    margin: 0 5px;
+}
+
+input[type=submit] {
+    max-height: 30px;
+    border-radius: 2px;
+    outline: none;
+    margin: 0 10px;
+}
+
+#menu {
+    width: 95%;
+    box-shadow: 0 0 2px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto 5px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#news {
+    width: 19%;
+    height: 85vh;
+    box-shadow: 0 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 79%;
+    height: 85vh;
+    box-shadow: 0 0 2px;
+    text-align: center;
+}
+
+#menu:hover, #news:hover, #article:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 60%;
+    max-width: 400px;
+    margin: 0 auto 5px;
+    border-bottom: 1px solid;
+    padding: 0;
+    font-weight: bold;
+}
+
+.newList-box {
+    height:500px;
+    overflow-y: scroll;
+}
+
+.newList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 60%;
+    max-width: 400px;
+    margin: 0 auto 5px;
+    padding: 0;
+}
+
+.list-item {
+    width: 30%;
+    overflow: hidden;
+    margin: 0 5px;
+    text-align: center;
+
+}
+

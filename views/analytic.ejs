@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="/public/stylesheets/styles.css">
+</head>
+<body>
+<div class="button-box">
+    <button class="back-home-button">home page</button>
+</div>
+<form action="/analytics" method="GET" class="filter-box">
+    <div class="select-box">
+        <h3>choose User ID</h3>
+        <select name="token">
+            <option data-id=""></option>
+            <% tokenArr.map(el => { %>
+            <option data-id="<%= el %>"><%= el %></option>
+            <% }) %>
+        </select>
+    </div>
+    <div class="select-box">
+        <h3>choose Area</h3>
+        <select name="field">
+            <option data-id="article"></option>
+            <option data-id="article">article</option>
+            <option data-id="menu">menu</option>
+            <option data-id="news">news</option>
+        </select>
+    </div>
+    <input type="submit" value="apply">
+</form>
+<ul class="list">
+    <li class="user list-item">User ID</li>
+    <li class="area list-item">Area</li>
+    <li class="date list-item">Timestamp</li>
+</ul>
+<div class="newList-box">
+    <% action.map(el => { %>
+    <ul class="newList">
+        <li class="user list-item"><%= el.token %></li>
+        <li class="area list-item"><%= el.field %></li>
+        <li class="date list-item"><%= el.date %></li>
+    </ul>
+    <% }) %>
+</div>
+<script src="/javascripts/jquery.min.js"></script>
+<script async defer src="/public/javascripts/scripts.js"></script>
+</body>
+</html>
+
