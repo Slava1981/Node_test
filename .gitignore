@@ -1,6 +1,4 @@
 node_modules
-.DS_Store
+test.pem
+.idea
 .env
-nodemon.json
-uploads
-ecosystem.config.js
